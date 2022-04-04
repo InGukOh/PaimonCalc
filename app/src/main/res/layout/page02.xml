@@ -30,20 +30,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:maxLines="6"
             android:hint="여행자는 원석 몇 개를 가지고있어?"
             android:inputType="number"
-            android:maxLength="9" />
+            android:maxLength="6" />
 
         <EditText
             android:id="@+id/Wish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:maxLines="4"
             android:hint="가진 인연은 몇 개 있어?"
             android:inputType="number"
-            android:maxLength="5" />
+            android:maxLength="4" />
 
         <EditText
             android:id="@+id/Gongwol"
