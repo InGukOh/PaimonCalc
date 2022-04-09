@@ -35,37 +35,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:fontFamily="@font/rtc"
                 android:text="여행자는"
                 android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center"
                 android:paddingHorizontal="60dp">
 
                 <TextView
                     android:id="@+id/res"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
+                    android:minWidth="40dp"
                     android:layout_height="wrap_content"
                     android:gravity="right"
                     android:paddingRight="5dp"
+                    android:fontFamily="@font/rtc"
+                    android:background="@drawable/text_gradient"
                     android:text="null"
-                    android:textColor="#008000"
-                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:text="개의 인연을"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
+                    android:fontFamily="@font/rtc"
+                    android:textColor="#ffffff"
+                    android:textSize="23dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -74,15 +79,16 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="모을 수 있어!"
+                android:fontFamily="@font/rtc"
                 android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
@@ -95,8 +101,10 @@
 
         <Button
             android:id="@+id/toPage01"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="80dp"
+            android:background="@drawable/btn_edge"
+            android:textColor="#ffffff"
             android:text="고마워 페이몬!!"
             android:textSize="25dp"
             android:textStyle="bold" />

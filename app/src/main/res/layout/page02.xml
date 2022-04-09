@@ -64,6 +64,7 @@
                 android:id="@+id/toPage03"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
+                android:background="@drawable/btn_edge"
                 android:text="다음 질문으로 가자!"
                 android:textSize="25dp"
                 android:textStyle="bold" />
