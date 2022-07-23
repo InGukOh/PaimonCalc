@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/toPage01"
             android:layout_width="250dp"
             android:layout_height="80dp"

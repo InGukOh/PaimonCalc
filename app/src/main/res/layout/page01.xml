@@ -214,7 +214,7 @@
                 app:textStrokeWidth="4.0" />
         </LinearLayout>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/toPage02"
             android:layout_width="300dp"
             android:layout_height="120dp"

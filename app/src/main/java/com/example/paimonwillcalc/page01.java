@@ -238,7 +238,7 @@ public class page01 extends AppCompatActivity {
         if (System.currentTimeMillis() <= backKeyPressedTime + 2500) {
             finish();
             toast.cancel();
-            toast = Toast.makeText(this,"이용해 주셔서 감사합니다.",Toast.LENGTH_LONG);
+            toast = Toast.makeText(this,"바이바이~!",Toast.LENGTH_LONG);
             toast.show();
         }
 
