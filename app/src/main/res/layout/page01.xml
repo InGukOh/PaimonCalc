@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".page01">
+    android:background="@color/askbtn">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="443dp"
+        android:layout_height="843dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="429dp"
             android:layout_height="match_parent"
+
             android:src="@drawable/paimonmain"></ImageView>
 
 
@@ -71,13 +72,13 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/rtc"
                 android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="5"
                 android:text="null"
                 android:textAlignment="center"
                 android:textColor="#00F500"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:shadowRadius="5"
-                android:shadowColor="#000000"
                 app:textStroke="true"
                 app:textStrokeColor="#000000"
                 app:textStrokeWidth="1.0" />
@@ -127,13 +128,13 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/rtc"
                 android:gravity="center"
-                android:text="null"
-                android:textColor="#000000"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:shadowColor="#000000"
                 android:shadowRadius="10"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
                 app:textStroke="true"
                 app:textStrokeColor="#FFFFFF"
                 app:textStrokeWidth="0.2" />
@@ -178,13 +179,13 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/rtc"
                 android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
                 android:text="null"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:shadowColor="#000000"
-                android:shadowRadius="10"
                 app:textStroke="true"
                 app:textStrokeColor="#FFFFFF"
                 app:textStrokeWidth="0.2" />
@@ -219,11 +220,13 @@
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:background="@drawable/gem_color_fp01"
             android:gravity="center"
             android:text="계산을 부탁해\n페이몬!"
-            android:background="@drawable/btn_edge"
             android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
 
     </LinearLayout>
 

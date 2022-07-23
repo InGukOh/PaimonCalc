@@ -133,7 +133,7 @@ public class page01 extends AppCompatActivity {
         } else if(weekDay.equals("금")){
             whatDate.setTextColor(0xAA042463);
         } else if(weekDay.equals("토")){
-            whatDate.setTextColor(0xAA7133a2);
+            whatDate.setTextColor(0xAA00aaff);
         } else if(weekDay.equals("일")){
             whatDate.setTextColor(0xAAff0b0c);
         }
@@ -214,5 +214,33 @@ public class page01 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    private long backKeyPressedTime = 0;
+    private Toast toast;
+    @Override
+    public void onBackPressed(){
+        Intent cycle = getIntent();
+        int check = cycle.getIntExtra("cycle",0);
+        if (System.currentTimeMillis() > backKeyPressedTime + 2500) {
+            backKeyPressedTime = System.currentTimeMillis();
+            if(check == 0){
+                toast = Toast.makeText(this,"아직 아무것도 계산하지 않았어!", Toast.LENGTH_SHORT);
+                toast.show();
+            } else if(check == 1){
+                toast = Toast.makeText(this,"앗..배고파서 까먹어버렸어!", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            toast = Toast.makeText(this, "뒤로 가기 버튼을 한번 더 누르면" + "\n"+
+                    "앱이 종료되.", Toast.LENGTH_LONG);
+            toast.show();
+            return;
+        }
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2500) {
+            finish();
+            toast.cancel();
+            toast = Toast.makeText(this,"이용해 주셔서 감사합니다.",Toast.LENGTH_LONG);
+            toast.show();
+        }
+
     }
 }

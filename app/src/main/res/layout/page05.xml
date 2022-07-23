@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="20dp">
+    android:paddingHorizontal="20dp"
+    android:background="@color/askbtn">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,7 +39,7 @@
                 android:fontFamily="@font/rtc"
                 android:text="여행자는"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 android:textSize="23dp"
                 android:textStyle="bold" />
 
@@ -52,14 +53,14 @@
                 <TextView
                     android:id="@+id/res"
                     android:layout_width="wrap_content"
-                    android:minWidth="40dp"
+                    android:minWidth="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:paddingRight="5dp"
+                    android:paddingHorizontal="15dp"
                     android:fontFamily="@font/rtc"
-                    android:background="@drawable/text_gradient"
+                    android:background="@drawable/gem_color_fp01"
                     android:text="null"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
@@ -69,7 +70,7 @@
                     android:gravity="left"
                     android:text="개의 인연을"
                     android:fontFamily="@font/rtc"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/black"
                     android:textSize="23dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -81,7 +82,7 @@
                 android:text="모을 수 있어!"
                 android:fontFamily="@font/rtc"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 android:textSize="23dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -103,11 +104,11 @@
             android:id="@+id/toPage01"
             android:layout_width="250dp"
             android:layout_height="80dp"
-            android:background="@drawable/btn_edge"
-            android:textColor="#ffffff"
+            android:background="@drawable/gem_color_fp01"
+            android:textColor="@color/black"
             android:text="고마워 페이몬!!"
             android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

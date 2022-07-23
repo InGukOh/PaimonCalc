@@ -27,6 +27,7 @@ public class page05 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "고마워 여행자!>▽<", Toast.LENGTH_SHORT).show();
+                intent.putExtra("cycle",1);
                 startActivity(intent);
             }
         });

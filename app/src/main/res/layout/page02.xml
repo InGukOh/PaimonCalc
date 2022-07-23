@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="20dp">
+    android:paddingHorizontal="20dp"
+    android:background="@color/askbtn">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -31,6 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="여행자는 원석 몇 개를 가지고있어?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
             android:inputType="number"
             android:maxLength="6" />
 
@@ -40,6 +44,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="가진 인연은 몇 개 있어?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
             android:inputType="number"
             android:maxLength="4" />
 
@@ -50,6 +57,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="공월은 몇 일 남았어?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
             android:inputType="number"
             android:maxLength="4" />
 
@@ -64,7 +74,8 @@
                 android:id="@+id/toPage03"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
-                android:background="@drawable/btn_edge"
+                android:background="@drawable/gem_color_fp01"
+                android:textColor="@color/black"
                 android:text="다음 질문으로 가자!"
                 android:textSize="25dp"
                 android:textStyle="bold" />

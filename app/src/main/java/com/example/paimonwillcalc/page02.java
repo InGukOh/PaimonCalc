@@ -41,7 +41,7 @@ public class page02 extends AppCompatActivity {
                     nowWish = Integer.parseInt(Wish.getText().toString());
                     nowG = Integer.parseInt(Gem.getText().toString());
                     int pg2res = setMethod(nowG,nowWish);
-                    Toast.makeText(getBaseContext(), "TEST"+nowG+" / "+nowWish +" / " + pg2res, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getBaseContext(), "TEST"+nowG+" / "+nowWish +" / " + pg2res, Toast.LENGTH_SHORT).show();
                     intent.putExtra("pg2res",pg2res);
                     startActivity(intent);
                 } else if(Gem.getText().toString().length() == 0 || Wish.getText().toString().length()== 0){

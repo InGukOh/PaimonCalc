@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="20dp">
+    android:paddingHorizontal="20dp"
+    android:background="@color/askbtn">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,7 +39,7 @@
                 android:text="이번 시즌 기행은 구매했니?"
                 android:fontFamily="@font/rtc"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
@@ -57,7 +58,9 @@
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="구매 했어" />
+                        android:text="구매 했어"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/black"/>
 
                     <RadioButton
                         android:id="@+id/notbuyGihang"
@@ -65,7 +68,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center"
-                        android:text="구매하지 않았어" />
+                        android:text="구매하지 않았어"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/black"/>
 
                 </RadioGroup>
             </LinearLayout>
@@ -84,7 +89,7 @@
                 android:fontFamily="@font/rtc"
                 android:text="상점판매 인연은 지금 교환 할 수 있니?"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
@@ -108,7 +113,9 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="교환할 수\n있어"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/black"/>
 
                     <RadioButton
                         android:id="@+id/noMaket"
@@ -117,7 +124,9 @@
                         android:layout_marginLeft="10dp"
                         android:gravity="center"
                         android:text="스타더스트가\n모자라"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/black"/>
 
                 </RadioGroup>
 
@@ -138,9 +147,10 @@
                 android:layout_width="300dp"
                 android:layout_height="80dp"
                 android:text="다음 질문으로 가자!"
-                android:background="@drawable/btn_edge"
+                android:background="@drawable/gem_color_fp01"
                 android:textSize="25dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
