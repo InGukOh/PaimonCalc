@@ -108,11 +108,12 @@ public class page04 extends AppCompatActivity {
                         ready_pg4res += (6480+1600);
                     }
                 }
+                int FinRes = 0;
+                int CalcInfo = (ready_pg4res / 160);
+                int get_StarLight = ((CalcInfo / 10)*2)/5; // 구매 및 공월,기행으로 받은 원석을 인연으로 치환 후 매 10회 가챠마다 스타라이트를 2개받음
+                                                            // 즉 100회가챠 -> 100 / 10 * 2 이므로 20개의 스타라이트를 가지게되고 이를 5로 나누면 스타라이트로 교환할 수 있는 인연량이 나옴
 
-
-                int FinRes = ready_pg4res / 160;
-                int StarLight = FinRes / 10;
-                if(StarLight > 3){
+                /*if(StarLight >= 3){
                     int StarLight_Change = 0;
                     int StarLight_Stack = 0;
                         for (int i = 0; i <= StarLight/3; i++){
@@ -123,11 +124,14 @@ public class page04 extends AppCompatActivity {
                             }
                         }
                         FinRes += StarLight_Change;
-                }
+                }*/
 
 
                 if(ready_MarketB.equals("yes")) FinRes +=5;
                 if(ready_MarketB.equals("no")) FinRes +=0;
+
+                FinRes = CalcInfo + get_StarLight;
+
 
                 intent.putExtra("pg4res",FinRes);
                 startActivity(intent);

@@ -44,16 +44,16 @@ public class page01 extends AppCompatActivity {
             public void onClick(View view) {
                 String CList = null;
                 if(weekDay.equals("월")||weekDay.equals("목")){
-                    CList = "몬드 : \n엠버, 클레, 바바라, 타르탈리아, 설탕, 디오나, 에일로이\n" +
-                            "리월 : \n각청, 치치, 응광, 소, 신학, 야란\n" +
+                    CList = "몬드 : \n엠버, 클레, 바바라, 타르탈리아, 설탕, 디오나, 에일로이\n" +"\n"+
+                            "리월 : \n각청, 치치, 응광, 소, 신학, 야란\n" +"\n"+
                             "이나즈마 : \n요이미야, 코코미, 토마";
                 } else if(weekDay.equals("화")||weekDay.equals("금")) {
-                    CList = "몬드 : \n베넷, 다이루크, 모나, 진, 레이저, 노엘, 유라\n" +
-                            "리월 : \n중운, 향릉, 감우, 호두, 카에데하라 카즈하, 운근\n" +
+                    CList = "몬드 : \n베넷, 다이루크, 모나, 진, 레이저, 노엘, 유라\n" +"\n"+
+                            "리월 : \n중운, 향릉, 감우, 호두, 카에데하라 카즈하, 운근\n" +"\n"+
                             "이나즈마 : \n아야카, 사라, 이토, 아야토, 시노부";
                 } else if(weekDay.equals("수")||weekDay.equals("토")){
-                    CList = "몬드 : \n벤티, 리사, 피슬, 케이아, 알베도, 로자리아\n" +
-                            "리월 : \n신염, 행추, 북두, 종려, 연비\n" +
+                    CList = "몬드 : \n벤티, 리사, 피슬, 케이아, 알베도, 로자리아\n" +"\n"+
+                            "리월 : \n신염, 행추, 북두, 종려, 연비\n" +"\n"+
                             "이나즈마 : \n사유, 라이덴 쇼군, 고로, 야에 미코";
                 } else {
                     CList = "오늘은 모든 캐릭터들이 사용할 수 있어!";
@@ -83,7 +83,7 @@ public class page01 extends AppCompatActivity {
                             "법구 : \n5성 - 불멸의 달빛/\n" +
                             "4성 - 왕실의 비전록/페보니우스 비전/일월의 정수/흑암 홍옥/하쿠신의 고리/맹세의 눈동자/\n\n" +
                             "장병기 : \n5성 - 화박연/\n" +
-                            "4성 - 유월창\n\n" +
+                            "4성 - 유월창/\n\n" +
                             "활 : \n5성 - /" +
                             "4성 - 청록의 사냥활/절현/유야의 왈츠/녹슨 활/흑암 배틀 보우";
                 } else if(weekDay.equals("화")||weekDay.equals("금")) {

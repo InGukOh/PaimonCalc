@@ -18,7 +18,7 @@ public class page05 extends AppCompatActivity {
         TextView resArea = findViewById(R.id.res);
         Intent resShow = getIntent();
         int resToView = resShow.getIntExtra("pg4res",0);
-        /*Toast.makeText(getApplicationContext(), "결과 : " + resToView, Toast.LENGTH_SHORT).show();*/
+        //Toast.makeText(getApplicationContext(), "결과 : " + resToView, Toast.LENGTH_SHORT).show();
         resArea.setText(String.valueOf(resToView));
 
         Intent intent = new Intent(this, page01.class);
