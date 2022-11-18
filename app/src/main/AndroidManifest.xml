@@ -29,6 +29,10 @@
             android:launchMode="singleTop"/>
         <activity android:name=".page05"
             android:launchMode="singleTop"/>
+        <activity android:name=".todayCharacters"
+            android:launchMode="singleTop"/>
+        <activity android:name=".todayWeapons"
+            android:launchMode="singleTop"/>
     </application>
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>

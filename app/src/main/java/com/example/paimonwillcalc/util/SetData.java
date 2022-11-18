@@ -1,4 +1,4 @@
-package com.example.paimonwillcalc;
+package com.example.paimonwillcalc.util;
 
 import androidx.appcompat.app.AppCompatActivity;
 
