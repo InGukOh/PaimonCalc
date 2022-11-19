@@ -20,7 +20,7 @@
             android:layout_width="429dp"
             android:layout_height="match_parent"
 
-            android:src="@drawable/paimonmain"></ImageView>
+            android:src="@drawable/bg_main_paimonmain"></ImageView>
 
 
     </LinearLayout>
@@ -32,7 +32,7 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="260dp"
-        android:background="@drawable/layout_edge"
+        android:background="@drawable/asset_layout_edge"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp"
@@ -113,7 +113,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/p01characterinfo"
+                android:background="@drawable/asset_p01characterinfo"
                 android:fontFamily="@font/rtc"
                 android:gravity="center"
                 android:shadowColor="#000000"
@@ -153,7 +153,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/p01characterinfo"
+                android:background="@drawable/asset_p01characterinfo"
                 android:fontFamily="@font/rtc"
                 android:gravity="center"
                 android:shadowColor="#000000"
@@ -200,7 +200,7 @@
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@drawable/gem_color_fp01"
+            android:background="@drawable/asset_gem_color_fp01"
             android:gravity="center"
             android:text="계산을 부탁해\n페이몬!"
             android:textSize="30dp"

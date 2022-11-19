@@ -24,7 +24,7 @@
             android:layout_width="330dp"
             android:layout_height="343dp"
             android:layout_gravity="center"
-            android:src="@drawable/paimon06" />
+            android:src="@drawable/bg_main_paimon06" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -147,7 +147,7 @@
                 android:layout_width="300dp"
                 android:layout_height="80dp"
                 android:text="다음 질문으로 가자!"
-                android:background="@drawable/gem_color_fp01"
+                android:background="@drawable/asset_gem_color_fp01"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>

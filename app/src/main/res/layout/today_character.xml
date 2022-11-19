@@ -20,7 +20,7 @@
             android:layout_width="429dp"
             android:layout_height="match_parent"
 
-            android:src="@drawable/paimonmain"></ImageView>
+            android:src="@drawable/bg_main_paimonmain"></ImageView>
 
 
     </LinearLayout>

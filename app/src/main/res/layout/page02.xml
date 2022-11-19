@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/paimon03" />
+            android:src="@drawable/bg_main_paimon03" />
 
         <EditText
             android:id="@+id/Gem"
@@ -74,7 +74,7 @@
                 android:id="@+id/toPage03"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
-                android:background="@drawable/gem_color_fp01"
+                android:background="@drawable/asset_gem_color_fp01"
                 android:textColor="@color/black"
                 android:text="다음 질문으로 가자!"
                 android:textSize="25dp"

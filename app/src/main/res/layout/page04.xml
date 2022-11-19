@@ -24,7 +24,7 @@
             android:layout_width="328dp"
             android:layout_height="328dp"
             android:layout_gravity="center"
-            android:src="@drawable/paimon02" />
+            android:src="@drawable/bg_main_paimon02" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -304,7 +304,7 @@
                 android:id="@+id/toPage05"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
-                android:background="@drawable/gem_color_fp01"
+                android:background="@drawable/asset_gem_color_fp01"
                 android:text="질문이 끝났어!"
                 android:textSize="25dp"
                 android:textStyle="bold"

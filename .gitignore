@@ -15,3 +15,8 @@
 local.properties
 app/src/main/assets/img
 
+
+/app/src/main/res/*.png
+
+.png
+*.png
