@@ -5,31 +5,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.paimonwillcalc.util.set_Day;
+import com.example.paimonwillcalc.util.SetDay;
 
 
 public class page01 extends AppCompatActivity {
-    /*public String getFileData(){
-        String json = "";
-        try{
-            InputStream is = getAssets().open("DATA.json");
-            int fileSize = is.available();
-            byte[] buffer = new byte[fileSize];
-            is.read(buffer);
-            is.close();
+//   public String getFileData(){
+//        String json = "";
+//        try{
+//            InputStream is = getAssets().open("DATA.json");
+//            int fileSize = is.available();
+//            byte[] buffer = new byte[fileSize];
+//            is.read(buffer);
+//            is.close();
+//
+//            json = new String(buffer, "UTF-8");
+//
+//            System.out.println(json);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        return json;
+//    }
 
-            json = new String(buffer, "UTF-8");
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return json;
-    }
-
-    public String Character_Res(String set){
+    /* public String Character_Res(String set){
         String Characters = null;
 
         SetData setData = new SetData();
@@ -208,7 +209,7 @@ public class page01 extends AppCompatActivity {
 //        Cbook_C.setText(spannableStringC);
 //        Fweapon_C.setText(spannableStringF);
 
-        String weekDay = set_Day.getToday();
+        String weekDay = SetDay.getToday();
 
         TextView whatDate = findViewById(R.id.whatDate);
 

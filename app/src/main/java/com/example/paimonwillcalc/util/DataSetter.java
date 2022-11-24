@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class dataSetter extends AppCompatActivity {
+public class DataSetter extends AppCompatActivity {
 
     public String getFileData(){
         String json = "";
