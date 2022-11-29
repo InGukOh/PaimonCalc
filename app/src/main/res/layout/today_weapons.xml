@@ -1,27 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/askbtn">
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="443dp"
-        android:layout_height="843dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="429dp"
-            android:layout_height="match_parent"
-
-            android:src="@drawable/bg_main_paimonmain"></ImageView>
+    android:background="#5f5f5f"
+ >
 
 
-    </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/toDayItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/rtc"
+                            android:gravity="center"
+
+                            android:shadowColor="#000000"
+                            android:shadowRadius="20"
+                            android:text="오늘의 강화 재료"
+
+                            android:textColor="#f8f8f8"
+                            android:textSize="35dp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/showItem"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/asset_todayinfo_edge"
+                            android:gravity="center"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:shadowColor="#000000"
+                            android:shadowRadius="50"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/toDayItem"
+                            app:layout_constraintVertical_bias="0.040" />
+
+                        <TextView
+                            android:id="@+id/toDay5StarWeapon"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rtc"
+                            android:gravity="center"
+
+                            android:shadowColor="#000000"
+                            android:shadowRadius="20"
+                            android:text="오늘의 5성 무기"
+
+                            android:textColor="#f8f8f8"
+                            android:textSize="35dp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/showItem" />
+
+                        <LinearLayout
+                            android:id="@+id/show5StartWeapon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/asset_todayinfo_edge"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:shadowColor="#000000"
+                            android:shadowRadius="50"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/toDay5StarWeapon"
+                            app:layout_constraintVertical_bias="0.040" />
+
+                        <TextView
+                            android:id="@+id/toDay4StarWeapon"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rtc"
+                            android:gravity="center"
+
+                            android:shadowColor="#000000"
+                            android:shadowRadius="20"
+                            android:text="오늘의 4성 무기"
+
+                            android:textColor="#f8f8f8"
+
+                            android:textSize="35dp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/show5StartWeapon" />
+
+                        <LinearLayout
+                            android:id="@+id/show4StartWeapon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/asset_todayinfo_edge"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:shadowColor="#000000"
+
+                            android:shadowRadius="50"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/toDay4StarWeapon"
+                            app:layout_constraintVertical_bias="0.040" />
+
+                </LinearLayout>
+
+
+        </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

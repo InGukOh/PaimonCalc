@@ -1,60 +1,81 @@
 package com.example.paimonwillcalc.util;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.InputStream;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class DataSetter extends AppCompatActivity {
 
-    public String getFileData(){
-        String json = "";
-        try{
-            InputStream is = getAssets().open("DATA.json");
-            int fileSize = is.available();
-            byte[] buffer = new byte[fileSize];
-            is.read(buffer);
-            is.close();
+    private String getDay = SetDay.getToday();
 
-            json = new String(buffer, "UTF-8");
+
+
+    public String Set_01 (){
+        String result = this.getDay.equals("월")? "Set_01" : this.getDay.equals("목") ? "Set_01" : null;
+        return result;
+    }
+
+    public String Set_02 (){
+        String result = this.getDay.equals("화")? "Set_02" : this.getDay.equals("금")? "Set_02" : null;
+        return result;
+    }
+
+    public String Set_03 (){
+        String result = this.getDay.equals("수")? "Set_03" : this.getDay.equals("토")? "Set_03" : null;
+        return result;
+    }
+
+
+
+    public ArrayList getData(String json){
+        ArrayList<ArrayList> imgData = new ArrayList<>();
+        if(Set_01() != null){
+            imgData =JsonParse(Set_01(),json);
+        }
+        if(Set_02() != null){
+            imgData =JsonParse(Set_02(),json);
+        }
+        if(Set_03() != null){
+            imgData = JsonParse(Set_03(),json);
+        }
+        return  imgData;
+    }
+
+
+
+    public ArrayList JsonParse(String set, String json){
+        try {
+            JSONObject setObject = new JSONObject(json);
+
+            JSONArray setArr = setObject.getJSONArray(set);
+
+            ArrayList<String> test1 = splitData(setArr.getJSONArray(0));
+            ArrayList<String> test2 = splitData(setArr.getJSONArray(1));
+            ArrayList<String> test3 = splitData(setArr.getJSONArray(2));
+
+            ArrayList<ArrayList<String>> masterArr = new ArrayList<>();
+
+            masterArr.add(test1);
+            masterArr.add(test2);
+            masterArr.add(test3);
+
+            return masterArr;
         }catch (Exception e){
             e.printStackTrace();
         }
-        return json;
+        return null;
     }
 
-    public String Character_Res(String set){
-        String Characters = null;
 
-        SetData setData = new SetData();
-        String json = getFileData();
 
-        ArrayList Arr_Character = new ArrayList();
-        Arr_Character = setData.Character(set,json);
-
-        return Characters = "몬드 : " + Arr_Character.get(0).toString() + "\n"+
-                "리월 : " + Arr_Character.get(1).toString() + "\n"+
-                "이나즈마 : " + Arr_Character.get(2).toString();
-    }
-
-    public String Weapon_Res(String set){
-        String Weapons = null;
-
-        SetData setData = new SetData();
-        String json = getFileData();
-
-        ArrayList Arr_Weapon = new ArrayList();
-        Arr_Weapon = setData.Weapon(set,json);
-
-        return Weapons = "한손검 : " + Arr_Weapon.get(0).toString() +"\n"+
-                "4성 - " +Arr_Weapon.get(1).toString() +"\n"+
-                "양손검 :" +Arr_Weapon.get(2).toString() +"\n"+
-                "4성 - " +Arr_Weapon.get(3).toString() +"\n"+
-                "법구 : " +Arr_Weapon.get(4).toString() +"\n"+
-                "4성 - " +Arr_Weapon.get(5).toString() +"\n"+
-                "장병기 : " +Arr_Weapon.get(6).toString() +"\n"+
-                "4성 - " +Arr_Weapon.get(7).toString() +"\n"+
-                "활 : " +Arr_Weapon.get(8).toString() +"\n"+
-                "4성 - "+Arr_Weapon.get(9).toString() +"\n";
+    public ArrayList splitData(JSONArray jsonArray) throws JSONException {
+        ArrayList<String> dataList = new ArrayList<>();
+        for(int i = 0; i<jsonArray.length(); i++){
+            dataList.add(jsonArray.getString(i));
+        }
+        return dataList;
     }
 }
