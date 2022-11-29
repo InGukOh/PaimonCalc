@@ -21,6 +21,7 @@ public class todayWeapons extends AppCompatActivity {
     ImageView weapon5StarView = null;
     ImageView weapon4StarView = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

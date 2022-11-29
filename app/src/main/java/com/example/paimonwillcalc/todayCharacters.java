@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class todayCharacters extends AppCompatActivity {
 
+
     ImageView itemView = null;
     ImageView char5StarView = null;
     ImageView char4StarView = null;
@@ -24,7 +25,6 @@ public class todayCharacters extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
 
         setContentView(R.layout.today_character);
 
