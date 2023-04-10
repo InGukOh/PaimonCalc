@@ -1,7 +1,7 @@
 # PaimonCalc
 파이몬이 계산해줄게! _ 인연 계산기
 
-<img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fm.blog.naver.com%2Fpnh_ellen23%2F222182296444&psig=AOvVaw033YLE9s-qnil_3N47XV0q&ust=1681204319596000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCLCfr6X8nv4CFQAAAAAdAAAAABAE">
+<img src="https://mblogthumb-phinf.pstatic.net/MjAyMDEyMjJfOTkg/MDAxNjA4NjQwNTc5OTU5.JPur5NHKrg7rao2zkbTH45ny_UYcdOoslpwgoElZxcg.6OsPAQ0J1kYpaXv4EeQXnSmCR2wflKuy7PZmDm9S-Dgg.PNG.pnh_ellen23/vvvvv.png?type=w800">
 
 
 페이몬이 계산해주는 인연 계산기 입니다.
