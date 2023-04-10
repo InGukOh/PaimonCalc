@@ -1,6 +1,8 @@
 # PaimonCalc
 파이몬이 계산해줄게! _ 인연 계산기
 
+<img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fm.blog.naver.com%2Fpnh_ellen23%2F222182296444&psig=AOvVaw033YLE9s-qnil_3N47XV0q&ust=1681204319596000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCLCfr6X8nv4CFQAAAAAdAAAAABAE">
+
 
 페이몬이 계산해주는 인연 계산기 입니다.
 
@@ -10,7 +12,7 @@
 <p>페이몬이 모을 수 있는 인연의 갯수를 알려줍니다.</p>
   <br><br>
   <p>페이지를 봐주셔서 감사합니다!</p>
-
+  <br><br>
   <p><strong> == update == </strong></p>
   <p>요일별 캐릭터 재료 표기</p>
   <p>요일별 무기 재료 표기</p>
